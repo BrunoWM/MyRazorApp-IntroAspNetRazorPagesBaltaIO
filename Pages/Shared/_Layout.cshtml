@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>@ViewData["Title"] - My Razor App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/site.css" asp-append-version="true" >
+    <link rel="stylesheet" href="~/MyRazorApp.styles.css" asp-append-version="true" >
+</head>
+<body>
+    <header>
+        <partial name="Shared/NavMenuPartial" />  @*Uses the tagHelper to make it easier*@
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    
+
+    @RenderSection(name:"scripts", required:false)
+</body>
+</html>
